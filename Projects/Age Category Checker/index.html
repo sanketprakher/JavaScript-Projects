@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Category Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Category Checker</h1>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+
+        <label for="ageInput">Age:</label>
+        <input type="text" id="ageInput" pattern="[0-9]*" placeholder="Enter your age">
+
+        <button onclick="checkAge()">Check Age</button>
+
+        <div id="result"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

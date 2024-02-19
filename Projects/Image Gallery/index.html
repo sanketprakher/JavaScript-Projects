@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <!-- Thumbnail Images -->
+        <div class="thumbnail" onclick="openLightbox(1)">
+            <img src="img1.jpeg" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="img2.jpeg" alt="Image 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(1)">
+            <img src="img1.jpeg" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="img2.jpeg" alt="Image 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(1)">
+            <img src="img1.jpeg" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="img2.jpeg" alt="Image 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(1)">
+            <img src="img1.jpeg" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(2)">
+            <img src="img2.jpeg" alt="Image 2">
+        </div>
+        <!-- Add more thumbnails as needed -->
+
+        <!-- Lightbox Container -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="Large Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
